@@ -1,0 +1,28 @@
+<head>
+  <title>meteor-methods</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <p>See <a href="https://github.com/Elfoslav/meteor-methods">Github code</a>.</p>
+  <h2>Users</h2>
+  {{#each users}}
+    {{this}}
+  {{/each}}
+
+  <h2>Remote users</h2>
+  {{#each remoteUsers}}
+    {{this}}
+  {{/each}}
+
+  <h2>Strange users</h2>
+  {{#each strangeUsers}}
+    {{this}}
+  {{/each}}
+
+</template>
